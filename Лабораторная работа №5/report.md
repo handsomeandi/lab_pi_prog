@@ -52,7 +52,7 @@ struct Titanic {
     std::string embarked;
 };
 
-Titanic parseStr(std::string const &psger) {
+Titanic parseStr(std::string const psger) {
     Titanic passenger;
     std::stringstream psgr(psger);
     std::string psgr_id, survival, pclass,temp,name,sex,age,sibsp,parch,ticket,fare,cabin,embarked;
