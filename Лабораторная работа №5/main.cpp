@@ -152,7 +152,7 @@ int main()
         for(size_t i=0;i<underage.size(); i++){
             fout << underage[i] << ", ";
         }
-        fout << "Most people from state: ";
+        fout << "\nMost people from state: ";
         if(q>=s && q>=c){
             fout << "Queenstown" << "\n";
         }else if(s>=q && s>=c){
