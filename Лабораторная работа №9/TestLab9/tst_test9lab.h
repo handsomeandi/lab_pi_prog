@@ -200,7 +200,7 @@ TEST_F(LockControllFixture, PassworkNotOK) {
     // Arrange
     PasswordResponse passwordNotOK;
 
-    passwordNotOK.password = "2859";
+    passwordNotOK.password = "4859";
     passwordNotOK.status = PasswordResponse::Status::OK;
 
     EXPECT_CALL(keypad, requestPassword())
@@ -223,11 +223,11 @@ TEST_F(LockControllFixture, PasswordChangeOK)
        passChangeOK1.status = PasswordResponse::Status::OK;
 
        PasswordResponse passChangeOK2;
-       passChangeOK2.password = "3248";
+       passChangeOK2.password = "4859";
        passChangeOK2.status = PasswordResponse::Status::OK;
 
        PasswordResponse passChangeOK3;
-       passChangeOK3.password = "3289";
+       passChangeOK3.password = "4859";
        passChangeOK3.status = PasswordResponse::Status::OK;
 
        EXPECT_CALL(keypad, requestPassword())
@@ -261,7 +261,7 @@ TEST_F(LockControllFixture, AnotherPasswordChangeOK)
         passChangeOK3.status = PasswordResponse::Status::OK;
 
         PasswordResponse passChangeOK4;
-        passChangeOK4.password = "4894";
+        passChangeOK4.password = "4859";
         passChangeOK4.status = PasswordResponse::Status::OK;
 
         PasswordResponse passChangeOK5;
